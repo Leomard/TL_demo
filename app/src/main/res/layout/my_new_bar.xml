@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000">
+
+        <RadioButton
+            android:text="搜索"
+            style="@style/my_tab"
+            android:drawableTop="@drawable/view_1_selector"
+            android:id="@+id/b1"
+            android:checked="true" />
+
+        <RadioButton
+            android:text="推荐"
+            style="@style/my_tab"
+            android:drawableTop="@drawable/view_2_selector"
+            android:id="@+id/b2" />
+
+        <RadioButton
+            android:text="广播"
+            style="@style/my_tab"
+            android:drawableTop="@drawable/view_3_selector"
+            android:id="@+id/b3" />
+
+        <RadioButton
+            style="@style/my_tab"
+            android:text="个人"
+            android:drawableTop="@drawable/view_4_selector"
+            android:id="@+id/b4" />
+
+    </RadioGroup>
+</LinearLayout>
